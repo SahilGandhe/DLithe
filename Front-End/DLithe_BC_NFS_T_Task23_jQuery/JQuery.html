@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+        
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+    $(function() {
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $("#tags").autocomplete({
+            source: availableTags
+        });
+    });
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    $(document).ready(function() {
+            $("button").click(function() {
+                $("div").animate({
+                    height: 'toggle'
+                });
+            });
+        }
+
+    );
+    $(document).ready(function() {
+            $("#test").dblclick(function() {
+                $(this).hide();
+            });
+        }
+
+    );
+    $(document).ready(function() {
+            $("#test1").click(function() {
+                $(this).hide();
+            });
+        }
+
+    );
+</script>
+
+
+<body>
+
+    <h3>Automation</h3>
+    <div class="ui-widget">
+        <p>Available Courses:</p>
+        <label for="tags">Tags: </label>
+        <input id="tags">
+    </div>
+
+    <h2>Accordion</h2>
+
+    <button class="accordion">JQuery</button>
+    <div class="panel">
+        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With
+            a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript..</p>
+    </div>
+
+    <button class="accordion">C#</button>
+    <div class="panel">
+        <p>C# is a strongly typed object-oriented programming language. C# is open source, simple, modern, flexible, and versatile. ... A programming language on computer science is a language that is used to write software programs. C# is a programming
+            language developed and launched by Microsoft in 2001.</p>
+    </div>
+
+    <button class="accordion">JavaScript</button>
+    <div class="panel">
+        <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages
+            interactive elements that engage a user.</p>
+    </div>
+
+    <p id="test">If you double-click on me, I will disappear.</p>
+    <p id="test1">If you click on me, I will disappear.</p>
+    <p>Click the button multiple times to toggle the animation.</p><button>Start Animation</button>
+
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <div style="background:#581e4a;height:100px;width:100px;position:absolute;"></div>
+</body>
+
+</html>

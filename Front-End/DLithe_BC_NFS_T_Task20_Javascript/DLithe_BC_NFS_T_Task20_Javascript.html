@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<body>
+
+    <p>Abstract Class Example:- </p>
+
+
+    <script>
+        //abstract class using class and prototype.
+        function Vehicle() {
+            this.vehicle = "vehicle";
+
+            throw new Error("we cann't create instance of Abstract Class");
+        }
+        Vehicle.prototype.display = function() {
+            return "Vehicle is " + this.vehicle;
+        }
+
+
+        function Bike(vehicle) {
+            this.vehicle = vehicle;
+        }
+
+        //Encapsulation with using class and prototype.
+        function Student(name, marks) {
+            var s_name = name;
+            var s_marks = marks;
+            Object.defineProperty(this, "name", {
+                get: function() {
+                    return s_name;
+                },
+                set: function(s_name) {
+                    this.s_name = s_name;
+                }
+
+            });
+
+            Object.defineProperty(this, "marks", {
+                get: function() {
+                    return s_marks;
+                },
+                set: function(s_marks) {
+                    this.s_marks = s_marks;
+                }
+
+            });
+
+        }
+        Bike.prototype = Object.create(Vehicle.prototype);
+        var bike = new Bike("running safely at 60 KMPH");
+
+        var bike1 = new Bike("running  not safely at 80 KMPH");
+        document.writeln(bike.display());
+        document.write("<br>");
+        document.writeln(bike1.display());
+
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("<p>Encapsulation Class Example:- </p>");
+        var stud = new Student("Mahesh", 90);
+        document.writeln(stud.name + " " + stud.marks);
+    </script>
+
+</body>
+
+</html>

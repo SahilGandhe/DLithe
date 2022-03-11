@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>String Methods</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Arrays.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Arrays.html">Arrays and Array Methods</a></li>
+                    <li class="active"><a href="Strings.html">String Methods</a></li>
+                    <li><a href="Exception.html">Exception Handling</a></li>
+                    <li><a href="Math.html">Math Functions</a></li>
+                    <li><a href="Date.html">Date Functions</a></li>
+                    <li><a href="Age.html">Age Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>charAt()</h1>
+        <hr>
+        <p>
+            <b>charAt()</b> method returns the character at the specified index.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.charAt(0);
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.charAt(0);
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>concat()</h1>
+        <hr>
+        <p>
+            <b>concat()</b> method joins two or more strings, and returns a new string.
+        </p>
+        <pre>
+            <code>
+                var str1 = "Hello ";
+                var str2 = "World!";
+                var res = str1.concat(str2);
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str1 = "Hello ";
+                var str2 = "World!";
+                var res = str1.concat(str2);
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>indexOf()</h1>
+        <hr>
+        <p>
+            <b>indexOf()</b> method returns the position of the first occurrence of a specified text in a string.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.indexOf("o");
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.indexOf("o");
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>lastIndexOf()</h1>
+        <hr>
+        <p>
+            <b>lastIndexOf()</b> method returns the position of the last occurrence of a specified text in a string.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.lastIndexOf("o");
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.lastIndexOf("o");
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>toLowerCase()</h1>
+        <hr>
+        <p>
+            <b>toLowerCase()</b> method converts a string to lowercase letters.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.toLowerCase();
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.toLowerCase();
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>toUpperCase()</h1>
+        <hr>
+        <p>
+            <b>toUpperCase()</b> method converts a string to uppercase letters.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.toUpperCase();
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.toUpperCase();
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>trim()</h1>
+        <hr>
+        <p>
+            <b>trim()</b> method removes whitespace from both ends of a string.
+        </p>
+        <pre>
+            <code>
+                var str = "     Hello World!     ";
+                var res = str.trim();
+                document.write(res);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "     Hello World!     ";
+                var res = str.trim();
+                document.write(res);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>split()</h1>
+        <hr>
+        <p>
+            <b>split()</b> method splits a string into an array of substrings.
+        </p>
+        <pre>
+            <code>
+                var str = "Hello World!";
+                var res = str.split(" ");
+                document.write(res[0]);
+                document.write(res[1]);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var str = "Hello World!";
+                var res = str.split(" ");
+                document.write(res[0]);
+                document.write("<br>" + res[1]);
+            </script>
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>

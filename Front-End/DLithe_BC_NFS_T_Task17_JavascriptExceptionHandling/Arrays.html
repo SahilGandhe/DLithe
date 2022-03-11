@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Arrays.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Arrays.html">Arrays and Array Methods</a></li>
+                    <li><a href="Strings.html">String Methods</a></li>
+                    <li><a href="Exception.html">Exception Handling</a></li>
+                    <li><a href="Math.html">Math Functions</a></li>
+                    <li><a href="Date.html">Date Functions</a></li>
+                    <li><a href="Age.html">Age Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Arrays -->
+    <div class="container">
+        <h1>splice()</h1>
+        <hr>
+        <p>The splice() method adds and/or removes array elements.<br>
+
+            The splice() method overwrites the original array.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            names.splice(2, 0, "Rahul", "Shubham");
+            document.write(names);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                names.splice(2, 0, "Rahul", "Shubham");
+                document.write("<br>");
+                document.write(names);
+            </script>
+        </p>
+        <ol>
+            <li>The splice() method adds and/or removes array elements.<br>
+                The splice() method overwrites the original array.</li>
+            <li>The splice() method takes three arguments:<br>
+                <ol>
+                    <li>The index at which to start changing the array.</li>
+                    <li>How many elements to remove (can be 0).</li>
+                    <li>Elements to add to the array (can be empty).</li>
+                </ol>
+            </li>
+            <li>The splice() method returns an array of removed elements.<br>
+                The splice() method overwrites the original array.</li>
+        </ol>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var a = names.splice(2, 1);
+            document.write(names);
+            document.write(a);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.splice(2, 1);
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>slice()</h1>
+        <hr>
+        <p>The slice() method returns a shallow copy of a portion of an array into a new array object selected from
+            begin to end (end not included). The original array will not be modified.<br>
+            The slice() method does not alter the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var topper = names.slice(1, 3);
+            document.write(names);
+            document.write(topper);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var topper = names.slice(1, 3);
+                document.write(names);
+                document.write("<br>");
+                document.write(topper);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>sort()</h1>
+        <hr>
+        <p>The sort() method sorts the elements of an array in place and returns the sorted array.<br>
+            The sort() method does not change the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                names.sort();
+                document.write(names);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                names.sort();
+                document.write(names);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>reverse()</h1>
+        <hr>
+        <p>The reverse() method reverses an array in place. The first array element becomes the last and the last
+            becomes the first.<br>
+            The reverse() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                names.reverse();
+                document.write(names);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                names.reverse();
+                document.write(names);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>join()</h1>
+        <hr>
+        <p>The join() method joins the elements of an array into a string.<br>
+            The join() method does not change the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var str = names.join(" * ");
+                document.write(str);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var str = names.join(" * ");
+                document.write(str);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>pop()</h1>
+        <hr>
+        <p>The pop() method removes the last element from an array and returns that element.<br>
+            The pop() method removes the last element from an array and returns that element.<br>
+            The pop() method does not change the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.pop();
+                document.write(names);
+                document.write(a);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.pop();
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>push()</h1>
+        <hr>
+        <p>The push() method adds one or more elements to the end of an array and returns the new length of the
+            array.<br>
+            The push() method adds one or more elements to the end of an array and returns the new length of the
+            array.<br>
+            The push() method does not change the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.push("Rahul");
+                document.write(names);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.push("Rahul");
+                document.write(names);
+            </script>
+        </p>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <h1>shift()</h1>
+        <hr>
+        <p>The shift() method removes the first element from an array and returns that element.<br>
+            The shift() method removes the first element from an array and returns that element.<br>
+            The shift() method does not change the original array, and both arrays will have the same behavior after any
+            change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.shift();
+                document.write(names);
+                document.write(a);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.shift();
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <h1>unshift()</h1>
+        <hr>
+        <p>The unshift() method adds one or more elements to the front of an array and returns the new length of the
+            array.<br>
+            The unshift() method adds one or more elements to the front of an array and returns the new length of the
+            array.<br>
+            The unshift() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+                var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.unshift("Rahul");
+                document.write(names);
+            </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.unshift("Rahul");
+                document.write(names);
+            </script>
+        </p>
+    </div>
+    <br>
+    
+
+    <div class="container">
+        <h1>entries()</h1>
+        <hr>
+        <p>The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in
+            the array.<br>
+            The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in
+            the array.<br>
+            The entries() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var iterator = names.entries();
+            for (let e of iterator) {
+                document.write(e + "<br>");
+            }
+        </pre>
+        <script>
+            varnames = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var iterator = names.entries();
+            for (let e of iterator) {
+                document.write(e + "<br>");
+            }
+        </script>
+        </script>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>concat()</h1>
+        <hr>
+        <p>The concat() method is used to join two or more arrays, and returns a copy of the joined arrays.<br>
+            The concat() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var a = names.concat(["Rahul", "Shubham"]);
+            document.write(names);
+            document.write(a);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.concat(["Rahul", "Shubham"]);
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>filter()</h1>
+        <hr>
+        <p>The filter() method creates a new array with all elements that pass the test implemented by the provided
+            function.<br>
+            The filter() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var  names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var a = names.filter(function (names) {
+                return names.length > 6;
+            });
+            document.write(names);
+            document.write(a);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>
+                 names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.filter(function (names) {
+                    return names.length > 6;
+                });
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>indexOf()</h1>
+        <hr>
+        <p>The indexOf() method returns the first index at which a given element can be found in the array, or -1 if
+            it is not present.<br>
+            The indexOf() method does not change the original array, and both arrays will have the same behavior after
+            any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+            var a = names.indexOf("Ravi");
+            document.write(names);
+            document.write(a);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>names = ["Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.indexOf("Ravi");
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>lastIndexOf()</h1>
+        <hr>
+        <p>The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if
+            it is not present.<br>
+            The lastIndexOf() method does not change the original array, and both arrays will have the same behavior
+            after any change to one is applied to the other.</p>
+        <p>Example:</p>
+        <pre>
+            var names = ["Sahil", "Kundan", "Ravi", "Ajay", "Sahil", "Kundan", "Ravi", "Ajay"];
+            var a = names.lastIndexOf("Ravi");
+            document.write(names);
+            document.write(a);
+        </pre>
+        <p>JavaScript Output: <br>
+            <script>names = ["Sahil", "Kundan", "Ravi", "Ajay", "Sahil", "Kundan", "Ravi", "Ajay"];
+                var a = names.lastIndexOf("Ravi");
+                document.write(names);
+                document.write("<br>");
+                document.write(a);
+            </script>
+        </p>
+    </div>
+
+
+</body>
+
+</html>

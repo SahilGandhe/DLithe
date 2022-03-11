@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        document.writeln("Polymorphism using prototype");
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        function A() {}
+        A.prototype.display = function() {
+            return "Welcome to JavaScript";
+        }
+
+        function B() {
+
+        }
+
+        B.prototype = Object.create(A.prototype);
+
+        var a = [new A(), new B()]
+
+        a.forEach(function(msg) {
+            document.writeln(msg.display() + "<br>");
+        });
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+        document.writeln("Inheritance using prototype");
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        //Constructor function  
+        function Bike(company) {
+            this.company = company;
+        }
+
+
+        Bike.prototype.getCompany = function() {
+                return this.company;
+            }
+            //Another constructor function  
+        function Vehicle(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+        var bike = new Bike("Honda");
+        Vehicle.prototype = bike; //Now Bike treats as a parent of Vehicle.  
+        var vehicle = new Vehicle("Shine", 80000);
+        document.writeln(vehicle.getCompany() + " " + vehicle.name + " " + vehicle.price);
+    </script>
+
+
+</body>
+
+</html>

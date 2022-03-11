@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#intro").css("background-color", "yellow");
+        });
+        $(document).ready(function() {
+            $("p.test1").css("background-color", "green");
+        });
+        $(document).ready(function() {
+            $(".test2, .test3, .test4").css("background-color", "pink");
+        });
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("p").hide();
+            });
+            $("#show").click(function() {
+                $("p").show();
+            });
+        });
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
+            });
+        });
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#p1").css("color", "red")
+                    .slideUp(5000)
+                    .slideDown(5000);
+            });
+        });
+
+        $(document).ready(function() {
+            $("button1").click(function() {
+                $("div").animate({
+                    left: '250px'
+                });
+            });
+        });
+
+        $(document).ready(function() {
+            $("button2").click(function() {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Welcome to jquery</h2>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <p id="intro">Example of ID selector.</p>
+    <p>I love travlling.</p>
+    <p class="test1">Example of class selector.</p>
+    <p>I love trading.</p>
+
+    <p class="test1">Example of class selector.</p>
+    <p>I love vegan.</p>
+
+    <p class="test2">Example of multiple class selector.</p>
+    <p>I love travlling.</p>
+    <p class="test3">Example of multiple class selector.</p>
+    <p>I love trading.</p>
+
+    <p class="test4">Example of multiple class selector.</p>
+    <p>I love vegan.</p>
+    <p>If you click on the "Hide" button, I will disappear and when you click on show it will show.</p>
+
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Welcome to jquery!</div>
+
+    <p id="p1">jQuery is fun!!</p>
+
+    <button>Click me</button>
+
+    <button1>Start Animation</button1>
+
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+    <div style="background:#bf2121;height:100px;width:100px;position:absolute;"></div>
+
+
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;">
+
+        <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+        <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exception Handling</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Arrays.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Arrays.html">Arrays and Array Methods</a></li>
+                    <li><a href="Strings.html">String Methods</a></li>
+                    <li class="active"><a href="Exception.html">Exception Handling</a></li>
+                    <li><a href="Math.html">Math Functions</a></li>
+                    <li><a href="Date.html">Date Functions</a></li>
+                    <li><a href="Age.html">Age Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Global Variable</h1>
+        <hr>
+        <p>
+            <b>Global Variable</b> is a variable that is defined outside of a function.
+        </p>
+        <pre>
+            <code>
+                var x = 10;
+                document.write(x);
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var x = 10;
+                document.write(x);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>Local Variable</h1>
+        <hr>
+        <p>
+            <b>Local Variable</b> is a variable that is defined inside a function.
+        </p>
+        <pre>
+            <code>
+                var x=20;
+                function myFunction() {
+                    let x = 10;
+                    document.write(x);
+                }
+                myFunction();
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                var x = 20;
+                function myFunction() {
+                    let x = 10;
+                    document.write(x);
+                }
+                myFunction();
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try</h1>
+        <hr>
+        <p>
+            <b>try</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                try {
+                    var x = 10;
+                    document.write(x);
+                } catch (error) {
+                    document.write(error);
+                }
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                try {
+                    var x = 10;
+                    document.write(x);
+                } catch (error) {
+                    document.write(error);
+                }
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try-catch</h1>
+        <hr>
+        <p>
+            <b>try-catch</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                function deleteName() {
+                    var name_of_user = "YouTube";
+                }
+                function DeleteNameFromDataBase() {
+                    try {
+                        document.write(name_of_user);
+                    }
+                    catch (ex) {
+                        document.getElementById("error").innerHTML = ex;
+                    }
+                }
+                deleteName();
+                DeleteNameFromDataBase();
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p id="error">
+            <script>
+                function deleteName() {
+                    var name_of_user = "YouTube";
+                }
+                function DeleteNameFromDataBase() {
+                    try {
+                        document.write(name_of_user);
+                    }
+                    catch (ex) {
+                        document.getElementById("error").innerHTML = ex;
+                    }
+                }
+                deleteName();
+                DeleteNameFromDataBase();
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>try-catch-finally</h1>
+        <hr>
+        <p>
+            <b>try-catch-finally</b> is a statement that allows you to execute a block of code.
+        </p>
+        <pre>
+            <code>
+                try {
+                    var x = 10;
+                    document.write(x);
+                    document.write(y);
+                } catch (error) {
+                    document.write(error);
+                } finally {
+                    document.write("Finally");
+                }
+            </code>
+        </pre>
+        <p>
+            <b>Result:</b>
+        </p>
+        <p>
+            <script>
+                try {
+                    var x = 10;
+                    document.write(x);
+                    document.write(y);
+                } catch (error) {
+                    document.write("<br>" + error);
+                } finally {
+                    document.write("<br>" + "Finally");
+                }
+            </script>
+        </p>
+    </div>
+</body>
+</html>

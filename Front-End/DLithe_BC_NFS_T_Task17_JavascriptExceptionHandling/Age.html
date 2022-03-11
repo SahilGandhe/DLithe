@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Age Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Arrays.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Arrays.html">Arrays and Array Methods</a></li>
+                    <li><a href="Strings.html">String Methods</a></li>
+                    <li><a href="Exception.html">Exception Handling</a></li>
+                    <li><a href="Math.html">Math Functions</a></li>
+                    <li><a href="Date.html">Date Functions</a></li>
+                    <li class="active"><a href="Age.html">Age Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <hr>
+        <p>
+            <b>Age Calculator</b> is a function that calculates the age of a person.
+        </p>
+        <pre>
+            <code>
+                // to take input from user
+                function myFunction() {
+                    var x = document.getElementById("myNumber").value;
+                    document.getElementById("demo").innerHTML = ageCalculator(x);
+                }
+
+                // to calculate age
+                function ageCalculator(birthYear) {
+                    var CurrentYear = new Date().getFullYear()
+                    return CurrentYear - birthYear;
+                }
+            </code>
+        </pre>
+
+        <center>
+            <p> Enter your Birth Year</p>
+            <input type="number" id="myNumber" value="">
+            <br><br>
+            <button onclick="myFunction()">Check your age</button>
+            <br>
+            <br>
+
+            <p id="demo"></p>
+            <p>
+                <script>
+                    // to take input from user
+                    function myFunction() {
+                        var x = document.getElementById("myNumber").value;
+                        document.getElementById("demo").innerHTML = ageCalculator(x);
+                    }
+
+                    // to calculate age
+                    function ageCalculator(birthYear) {
+                        var CurrentYear = new Date().getFullYear()
+                        return CurrentYear - birthYear;
+                    }
+                </script>
+            </p>
+        </center>
+    </div>
+</body>
+</html>

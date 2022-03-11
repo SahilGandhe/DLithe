@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Date Functions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Arrays.html">JavaScript</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Arrays.html">Arrays and Array Methods</a></li>
+                    <li><a href="Strings.html">String Methods</a></li>
+                    <li><a href="Exception.html">Exception Handling</a></li>
+                    <li><a href="Math.html">Math Functions</a></li>
+                    <li class="active"><a href="Date.html">Date Functions</a></li>
+                    <li><a href="Age.html">Age Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>new Date()</h1>
+        <hr>
+        <p>new Date() creates a new date object with the current date and time:</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                var d = new Date();
+                document.write(d);
+            </code>
+        </pre>
+        <p>The above example will output the current date and time:</p>
+        <p>
+            <script>
+                var d = new Date();
+                document.write(d);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>new Date(milliseconds)</h1>
+        <hr>
+        <p>new Date(milliseconds) creates a new date object with the specified number of milliseconds since January 1, 1970:</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                var d = new Date(1000);
+                document.write(d);
+            </code>
+        </pre>
+        <p>The above example will output the date and time of the first second of 1970:</p>
+        <p>
+            <script>
+                var d = new Date(1000);
+                document.write(d);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>new Date(year, month, day, hours, minutes, seconds, milliseconds)</h1>
+        <hr>
+        <p>new Date(year, month, day, hours, minutes, seconds, milliseconds) creates a new date object with the specified date and time:</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                var d = new Date(2020, 0, 1, 0, 0, 0, 0);
+                document.write(d);
+            </code>
+        </pre>
+        <p>The above example will output the date and time of the first second of 2020:</p>
+        <p>
+            <script>
+                var d = new Date(2020, 0, 1, 0, 0, 0, 0);
+                document.write(d);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>new Date(dateString)</h1>
+        <hr>
+        <p>new Date(dateString) creates a new date object with the specified date and time:</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                var d = new Date("January 1, 2020");
+                document.write(d);
+            </code>
+        </pre>
+        <p>The above example will output the date and time of the first second of 2020:</p>
+        <p>
+            <script>
+                var d = new Date("January 1, 2020");
+                document.write(d);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>new Date(dateString, formatString)</h1>
+        <hr>
+        <p>new Date(dateString, formatString) creates a new date object with the specified date and time:</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                var d = new Date("January 1, 2020", "MM/dd/yyyy");
+                document.write(d);
+            </code>
+        </pre>
+        <p>The above example will output the date and time of the first second of 2020:</p>
+        <p>
+            <script>
+                var d = new Date("January 1, 2020", "MM/dd/yyyy");
+                document.write(d);
+            </script>
+        </p>
+    </div>
+    <br>
+
+    </body>
+    </html>

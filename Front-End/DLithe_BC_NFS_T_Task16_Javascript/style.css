@@ -1,0 +1,14 @@
+body {
+    background-image: url('img/bg_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+.btn_style{
+    height: 50px;
+    width:  50px;
+    margin: 100px;
+}
