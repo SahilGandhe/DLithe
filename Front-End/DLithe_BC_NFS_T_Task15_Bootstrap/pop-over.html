@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:hover, h1:hover, a:hover {
+  background-color: rgb(138, 233, 138);
+}
+
+#myDIV {
+  width: 300px;
+  height: 300px;
+  background-image: url("paper.gif");
+}
+
+</style>
+
+</head>
+<body>
+
+
+  // 
+
+    <button onclick="displayDate()">Tap me?</button>
+
+    <script>
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+    
+    <p id="demo"></p>
+
+
+
+// mouse hover //
+
+<h1>Hello</h1>
+
+//Click event//
+
+<p> "Hello"</p>
+
+<script>
+window.onclick = myFunction;
+
+function myFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
+}
+</script>
+
+
+
+
+<div class="intro">
+  <p id="name">Welcome to Bootsatrap</p>
+ 
+</div>
+
+
+
+<a href="https://www.google.com">google.com</a><br>
+
+<a href="feb8.html">Task today</a><br>
+
+<a href="dropdown.html">previous Task</a><br>
+
+
+<br>
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="https://media.istockphoto.com/photos/morning-sunrise-over-world-famous-and-popular-snorkeling-spot-hanauma-picture-id1277702104?b=1&k=20&m=1277702104&s=170667a&w=0&h=6QuS8cWtONshu2RC7Nk5uLhynYqotLz4mcEyhrkINaU=" alt="beach" width="400" height="400">
+
+
+
+<script>
+function bigImg(x) {
+  x.style.height = "450px";
+  x.style.width = "450px";
+}
+
+function normalImg(x) {
+  x.style.height = "500px";
+  x.style.width = "500px";
+}
+</script><br>
+<br>
+
+
+/* Function with parameter */
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 10;
+  }  
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(10);
+</script>
+
+
+/background image/
+
+
+
+<button onclick="myFunction()">Tap me</button>
+
+<div id="myDIV">
+  <h1>Hello</h1>
+</div>
+<script>
+function myFunction() {
+ 
+   document.getElementById("myDIV").style.backgroundImage = "url(https://wallpaperaccess.com/full/2880316.jpg)";
+}
+
+</script><br>
+
+
+//inner html//
+
+
+<script type="text/javascript" >  
+  function showcommentform() {  
+  var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>";  
+    
+  document.getElementById('mylocation').innerHTML=data;  
+   }  
+    
+  </script>  
+  <form name="myForm">  
+  <input type="button" value="Tap me" onclick="showcommentform()">  
+  <div id="mylocation"></div>  
+  </form>  <br>
+
+
+
+
+
+</body>
+</html
