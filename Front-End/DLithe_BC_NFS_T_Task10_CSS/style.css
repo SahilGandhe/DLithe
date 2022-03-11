@@ -1,0 +1,39 @@
+table
+{    
+    width: 400px;
+}
+
+th, caption
+{
+    text-align: center;
+}
+
+table, th, td
+{
+    border: 1px solid #000;
+}
+
+th, td
+{
+    padding: 10px;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgb(240, 236, 24);
+}
+
+tr:nth-child(odd)
+{
+    background-color: rgb(233, 16, 160);
+}
+
+tr:hover 
+{
+    background-color: rgb(71, 4, 255);
+}
+
+.firstsection {
+    background-color: rgb(5, 215, 252);
+    height: 400px;
+}
